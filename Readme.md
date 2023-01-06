@@ -11,8 +11,8 @@ This study aimed to design an ultrafast method, Simplified Deep-Layer Aggregatio
 The deep learning algorithm requires enough RAM and GPU to support the calculation. For optimal performace, we recommenda computer with the following specs:
 
 - RAM: 16+GB
-- CPU: Intel i7 or better
-- GPU:  1080Ti or better
+- CPU: Intel i5 or better
+- GPU:  2080Ti or better
 
 ### Environment Requirements:
 
@@ -25,29 +25,30 @@ The deep learning algorithm requires enough RAM and GPU to support the calculati
 - Numpy: 1.14.5
 - tifffile: 0.15.1
 - Scikit-image:0.13.1
+- tensorRT
 
 ## Functions:
 
-For interactive demos of the functions, please give the file paths that include the training and testing images. You can also adjust some paramters for better training or testing in your own computer. The python file config.py is used for configuration of the packages.  Paths and training or testing parameters can be adjusted via this file.
+For interactive demos of the functions, please give the file paths that include the training and testing images via the Train or Predict python fileS. You can also adjust some paramters for better training or testing in your own computer. The python file config.py is used for configuration of the packages.  Paths and training or testing parameters can be adjusted via this file.
 
 ## three main functions:
 
-`DHPR_Image_Selection.py`:  Generating a typical training set from input images automatically following diversity and hardness samples first criteria.
-`Train_Supervise.py`: Realizing the training process for a new training or transfer learning for fine tuning.
-`Predict_Selected_Dataset.py`: Loading the trained model for predcting of new testing image.
+Fast_MyNet5.py:  The network architecture of SDASN for fast segmentation.
+Train_Supervise.py: Realizing the training process for a new training or transfer learning for fine tuning.
+Predict.py: Loading the trained model for predcting of new testing image.
 
 ## Models:
-
-We include two models for users to test. One is the model trained via our DHPR selection rule, and named DHPR_300.ckpt in the 'checkpoints' file. The other is the model trained via large-scale dataset (1500 images), and named USES_1500.ckpy in the 'checkpoints' file.  
+We provide some trained models named Fast_MyNet5_Re300_epoch_X.ckpt in the 'checkpoints' file.
 
 ## Test Dataset:
 
-We also include 6 testing images for testing  in the 'image' file under the 'test_dataset' file. The prediction results by our DHPR model and large-scale samples model (USES) are also included in the 'DHPR_300_prediction' file and 'USES_1500_prediction' file under the 'test_dataset' file, respectively. 
-The datasets can be accessed via: https://pan.baidu.com/s/1_7TP1-p5KLkiOFiG3iGk-A. Its extraction code is: dbhq.
+We also include 6 testing images for testing  in the 'image' file under the 'test_dataset' file. 
+The datasets can be accessed via: https://pan.baidu.com/s/1_7TP1-p5KLkiOFiG3iGk-A. 
+Its extraction code is: dbhq.
 
 
 
-## Training datasets for Brain-scale:
+## 3D Training datasets for Brain-scale:
 
 We also publish our typical training datasets with 300 neuronal images from brain-scale neuronal dataset to encourage the study of neuron reconstruction. 
 The datasets can be accessed via: https://pan.baidu.com/s/16rp-YSyM3ttitus5h3jvMA.  The code for the datasets and more detailed informations can be provided by email: huangqing@hust.edu.cn. 
