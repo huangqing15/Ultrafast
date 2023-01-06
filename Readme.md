@@ -14,7 +14,6 @@ The deep learning algorithm requires enough RAM and GPU to support the calculati
 - CPU: Intel i7 or better
 - GPU:  1080Ti or better
 
-
 ### Environment Requirements:
 
 - Nvidia GPU corresponding driver
@@ -46,9 +45,7 @@ We include two models for users to test. One is the model trained via our DHPR s
 We also include 6 testing images for testing  in the 'image' file under the 'test_dataset' file. The prediction results by our DHPR model and large-scale samples model (USES) are also included in the 'DHPR_300_prediction' file and 'USES_1500_prediction' file under the 'test_dataset' file, respectively. 
 The datasets can be accessed via: https://pan.baidu.com/s/1_7TP1-p5KLkiOFiG3iGk-A. Its extraction code is: dbhq.
 
-## Software:
 
-We also provide an easy-to-use Neuron Segmentation software GTree with graphics interaction. This Software allows user to load the trained model (DHPR model and USES model) and testing image. Then the predicted neuron probability by the trained model is achieved and can be visualized in the software. The software is accessed via: https://pan.baidu.com/s/1t9CpQ_3cgkLkXbWMi0Uqyw  . The code is `josz`.
 
 ## Training datasets for Brain-scale:
 
