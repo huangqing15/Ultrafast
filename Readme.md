@@ -1,8 +1,8 @@
-# Brain-wide SNR improvement of neuron connections using deep learning
+# Ultrafast 3D segmentation of brain-wide optical neuronal volume
 
 ## Overview:
 
-This study aimed to improve the brain-wide low signal-to-noise ratio (SNR) of optical neuronal image at cellular level using deep-learning. As low SNR widely exists despite progresses from labelling, imaging and processing, operators had to give up ~19% reconstruction of low SNR and dense images in recent trials. This study developed an automatic, typical and feature balanced training set construction method for brain-scale neuronal image. Previous DL based methods were usually built for specific local images. The application of DL to massive-scale has encountered the problem of selecting training examples to represent and balance the high diverse and complex features of whole-brain. Currently, operators have to use large-scale examples or iterative experiments (including transfer training) to build the training set, which are usually subjective, unrepeatability and expensive in training 3D examples. I have simplified the construction using specific heuristic knowledge, and explored key, quantitative and distinguishable indicators to characterize the diversity and hardness of targeted neuronal regions. Thus, a typical training set is built based on specific rules with less examples and no experience dependency. 
+This study aimed to design an ultrafast method, Simplified Deep-Layer Aggregation Supervision Network (SDASN), to segment complex neuronal morphology from large-scale micro-optical image. SDASN is a highly direct integrated streamlined network accelerated by TensorRT. It realized an unattainable inference speed (~0.3s on a 300¡Á300¡Á300 volume while 7.3s for 3D UNet), and outperformed current novel methods on different low SNR images prediction. Neurons in TB-sized brain images were segmented by SDASN with few manual annotations and a sparse data reduction strategy in several hours using one computer effectively and generalized, further promoting neuron tracing and analysis. We also published our 3D neuronal training dataset to encourage deep learning usage in large-scale neuronal volume processing.
 
 ## System Requirements
 
@@ -14,10 +14,6 @@ The deep learning algorithm requires enough RAM and GPU to support the calculati
 - CPU: Intel i7 or better
 - GPU:  1080Ti or better
 
-### Software Requirements:
-
-The package development version is tested on Linux operating systems. The developmental version of the package has been tested on the following systems:
-Linux: Ubuntu 16.04.1
 
 ### Environment Requirements:
 
