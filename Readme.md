@@ -51,4 +51,4 @@ Its extraction code is: dbhq.
 ## 3D Training datasets for Brain-scale:
 
 We also publish our typical training datasets with 300 neuronal images from brain-scale neuronal dataset to encourage the study of neuron reconstruction. 
-The datasets can be accessed via: https://pan.baidu.com/s/16rp-YSyM3ttitus5h3jvMA.  The code for the datasets and more detailed informations can be provided by email: huangqing@hust.edu.cn. 
+The datasets can be accessed via: https://pan.baidu.com/s/16rp-YSyM3ttitus5h3jvMA.  The code for the datasets and more detailed informations can be provided by email: hustsy2008@163.com.
